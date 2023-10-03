@@ -4,7 +4,7 @@ export class NewsItem extends Component {
   render() {
     const {title, description, author, publishedAt, url, urlToImage} = this.props;
     return (
-      <div className='md-4'>
+<div className='col-md-4'>
 <div className="card my-3 mx-3" style={{width: "20rem"}}>
   <img src={urlToImage} className="card-img-top" alt="..."/>
   <div className="card-body">
@@ -19,7 +19,7 @@ export class NewsItem extends Component {
     <a href={url} className="card-link">for more details</a>
   </div>
 </div>
-      </div>
+</div>
     )
   }
 }

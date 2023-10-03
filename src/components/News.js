@@ -187,19 +187,6 @@ export default class News extends Component {
         },
         {
             "source": {
-                "id": "the-wall-street-journal",
-                "name": "The Wall Street Journal"
-            },
-            "author": "Alexander Osipovich, Candice Choi, Dean Seal, David Marino-Nachison, Hannah Miao, Corrie Driebusch, Margot Patrick, Sam Goldfarb, Angus Berwick, Eric Wallerstein, Chelsey Dulaney, Gunjan Banerji, Rebecca Feng, Heard Editors",
-            "title": "FTX Sues Sam Bankman-Fried's Parents to Recover 'Misappropriated Funds' - The Wall Street Journal",
-            "description": "Live coverage of what's moving stocks and other markets, including the Dow Jones Industrial Average, S&P 500 and Nasdaq Composite",
-            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-jones-09-19-2023",
-            "urlToImage": "https://images.wsj.net/im-785590/social",
-            "publishedAt": "2023-09-19T18:23:00Z",
-            "content": "Stocks slid Tuesday while bond yields climbed to their highest levels since 2007 as the Federal Reserve's two-day September meeting got going.\r\nShares of Amazon.com, one of the biggest stocks in the … [+1702 chars]"
-        },
-        {
-            "source": {
                 "id": null,
                 "name": "Pff.com"
             },
@@ -213,19 +200,6 @@ export default class News extends Component {
         },
         {
             "source": {
-                "id": "the-verge",
-                "name": "The Verge"
-            },
-            "author": "Chris Welch",
-            "title": "Your iPhone can now restore your Apple TV if the streaming box has problems - The Verge",
-            "description": "Apple is making its Apple TV set-top box easier to service. A new feature lets iPhone owners restore the device in the event that it needs a reset due to software bugs.",
-            "url": "https://www.theverge.com/2023/9/19/23880671/apple-tv-4k-hd-iphone-restore-recovery",
-            "urlToImage": "https://cdn.vox-cdn.com/thumbor/eUkBiLsG7jUTkwzTxKgG7lvSb3c=/0x0:1215x781/1200x628/filters:focal(608x391:609x392)/cdn.vox-cdn.com/uploads/chorus_asset/file/24934855/tvrestore.jpg",
-            "publishedAt": "2023-09-19T17:33:27Z",
-            "content": "Your iPhone can now restore your Apple TV if the streaming box has problems\r\nYour iPhone can now restore your Apple TV if the streaming box has problems\r\n / No more having to rely on Apple support wh… [+1780 chars]"
-        },
-        {
-            "source": {
                 "id": null,
                 "name": "BBC News"
             },
@@ -236,19 +210,6 @@ export default class News extends Component {
             "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/11FD2/production/_131128637_e6ee4a28170caa44ebd2db38cccf2079583078910_0_1731_11541000x667.jpg",
             "publishedAt": "2023-09-19T17:19:15Z",
             "content": "A plane carrying five Americans jailed in Iran for years has landed in the US after a controversial prisoner swap.\r\nThey touched down in Fort Belvoir, Virginia, just south of Washington DC on Tuesday… [+4258 chars]"
-        },
-        {
-            "source": {
-                "id": "reuters",
-                "name": "Reuters"
-            },
-            "author": "David Ljunggren, Steve Scherer",
-            "title": "Canada's Trudeau: not trying to provoke India, but wants answers over murder - Reuters",
-            "description": "Canada is not trying to provoke India by suggesting it was linked to the murder of a Sikh separatist leader, but wants New Delhi to address the issue properly, Prime Minister Justin Trudeau said on Tuesday.",
-            "url": "https://www.reuters.com/world/canada-pm-not-trying-provoke-india-want-answers-over-murder-2023-09-19/",
-            "urlToImage": "https://www.reuters.com/resizer/YySP3QGz78TGILxvFXZzqHMxBxo=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/HD4BMMVVDRPRVGABTBP5Y4OLYU.jpg",
-            "publishedAt": "2023-09-19T17:06:00Z",
-            "content": "OTTAWA, Sept 19 (Reuters) - Canada is not trying to provoke India by suggesting it was linked to the murder of a Sikh separatist leader, but wants New Delhi to address the issue properly, Prime Minis… [+4346 chars]"
         },
         {
             "source": {
@@ -267,44 +228,38 @@ export default class News extends Component {
 
     constructor(){
         super();
-        this.state = {articles: this.articles};
+        this.state = {
+            articles: this.articles, 
+            loading: false
+        };
     }
   render() {
     return (
-      <div className='container my-3'>
-        <NewsItem 
-        author= "Jeff Stein"
-        title= "Michigan Democrats urge Biden to beat Trump to UAW picket line - The Washington Post"
-        description= "The strike has posed a political puzzle for the president, who must figure out how far to go to stand with the UAW workers."
-        url= "https://www.washingtonpost.com/business/2023/09/18/biden-uaw-strike-picket-line/"
-        urlToImage= "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/M3G2YE5SADW2TFLY7HAWYIMAUM_size-normalized.jpg&w=1440"
-        publishedAt= "2023-09-19T00:24:34Z"
-        />
-        <NewsItem 
-        author= "Jeff Stein"
-        title= "Michigan Democrats urge Biden to beat Trump to UAW picket line - The Washington Post"
-        description= "The strike has posed a political puzzle for the president, who must figure out how far to go to stand with the UAW workers."
-        url= "https://www.washingtonpost.com/business/2023/09/18/biden-uaw-strike-picket-line/"
-        urlToImage= "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/M3G2YE5SADW2TFLY7HAWYIMAUM_size-normalized.jpg&w=1440"
-        publishedAt= "2023-09-19T00:24:34Z"
-        />
-        <NewsItem 
-        author= "Jeff Stein"
-        title= "Michigan Democrats urge Biden to beat Trump to UAW picket line - The Washington Post"
-        description= "The strike has posed a political puzzle for the president, who must figure out how far to go to stand with the UAW workers."
-        url= "https://www.washingtonpost.com/business/2023/09/18/biden-uaw-strike-picket-line/"
-        urlToImage= "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/M3G2YE5SADW2TFLY7HAWYIMAUM_size-normalized.jpg&w=1440"
-        publishedAt= "2023-09-19T00:24:34Z"
-        />
-        <NewsItem 
-        author= "Jeff Stein"
-        title= "Michigan Democrats urge Biden to beat Trump to UAW picket line - The Washington Post"
-        description= "The strike has posed a political puzzle for the president, who must figure out how far to go to stand with the UAW workers."
-        url= "https://www.washingtonpost.com/business/2023/09/18/biden-uaw-strike-picket-line/"
-        urlToImage= "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/M3G2YE5SADW2TFLY7HAWYIMAUM_size-normalized.jpg&w=1440"
-        publishedAt= "2023-09-19T00:24:34Z"
-        />
-
+      <div className='container'>
+        <div className="row">
+        {this.articles.map(
+            (element)=>{
+              return <NewsItem 
+                key={element.url} 
+                author={element.author}
+                title={
+                  element.title.length >= 45
+                    ? element.title.slice(0, 45) + "..."
+                    : element.title
+                }
+                description={
+                  element.description.length >= 60
+                    ? element.description.slice(0, 60) + "..."
+                    : element.description
+                } 
+                url={element.url}
+                urlToImage={element.urlToImage}
+                publishedAt={element.publishedAt}
+                />
+            }
+          )
+        }
+        </div>
       </div>
     )
   }
