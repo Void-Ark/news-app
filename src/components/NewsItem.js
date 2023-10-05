@@ -16,7 +16,7 @@ export class NewsItem extends Component {
     <li className="list-group-item">{publishedAt}</li>
   </ul>
   <div className="card-body">
-    <a href={url} className="card-link">for more details</a>
+    <a href={url}  className="card-link">for more details</a>
   </div>
 </div>
 </div>
